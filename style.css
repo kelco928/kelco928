@@ -1,0 +1,27 @@
+.list-unstyled{
+	font-style: italic 
+}
+.flex-parent {
+	display: flex;
+	align-items: center;
+}
+.flex-item{
+	align-self: auto | flex-start | flex-end | center | baseline | stretch;
+	-webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto; 
+    padding: 10px;
+}
+.post{
+	text-align: center;
+}
+.fa{
+	padding: 20px;
+	font-size: 30px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+}

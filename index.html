@@ -1,68 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-
+<title>Kelsey's Travels</title>
+<link rel="shortcut icon" type="img/png" href="plane.png">
 <meta charset="UTF-8">
-<title>Bare - Start Bootstrap Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
 
-<!-- All the bootstrap stuff -->
+/* Style the body */
+body {
+    font-family: Palatino;
+    margin: 0;
+}
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+/* Header/logo Title */
+.header {
+    padding: 60px;
+    text-align: center;
+    background-image: url("Travels.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
 
+/* Style the top navigation bar */
+.navbar {
+    display: flex;
+    background-color: #333;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar > a {
+  height: 100%;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 10%;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+/*Each item in sidebar*/
+.nice{
+    background-color: #b3f0ff;
+    padding: 10px;
+    text-align: center; 
+}
+
+.blog{
+  background-color: #ff9999;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/*Each blog entry */
+
+.bloga{
+    background-color: #ffffcc;
+    padding: 20px;
+}
+
+.blogb{
+    background-color: #bbff99;
+    padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    text-decoration: none;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row, .navbar {   
+        flex-direction: column;
+    }
+}
+</style>
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">HOME</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<!-- Header -->
+<div class="header">
+  <h1><b>KELSEY'S TRAVELS</b></h1>
+  <p><b>Exploring the world, one culture at a time.</b></p>
+</div>
 
-    <!-- Page Content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h1 class="mt-5">Alan's Website</h1>
-          <ul class="list-unstyled">
-            <li>Using Bootstrap</li>
-            <li>and nice CS things</li>
-          </ul>
-        </div>
-      </div>
+<!-- Navigation Bar -->
+<div class="navbar">
+    <a href="https://www.youtube.com/channel/UCjb4ZwNrTG44T4jTRh_bgxA?view_as=subscriber" target="_blank">Travel Vlogs</a>
+    <a href="http://kelco928.weebly.com/travel-blogs" target="_blank">Travel Blogs</a>
+</div>
 
-     <div>
-        <a target="_blank" href="http://google.com">Link to Google</a>
-     </div>
-     <div class="col-lg-4 offset-lg-4 text-center">
-        <p>Centered Paragraph with 4/12 offset <br> With a line break too!</p>
-     </div>
-     <div>
-     	<label>Resume:</label>
-        <a target="_blank" href="resume.pdf">Alan Burstein Resume</a>
-     </div>
-     <div class="col-lg-2 offset-lg-2"><img src="elon.jpg" alt="" /></div>
-
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <div class="nice">
+      <h2>Nice to meet you!</h2>
+      <h5>I am Kelsey Fong, Madame President.</h5>
+      <div class="fakeimg" style="height: 200px;"><center><img src="Mask Portrait.jpg" height="200"></center></div>
+      <br>
+      <p>Born and raised in San Francisco, I have always enjoyed exploring both my community and the world abroad.<br>Follow me on my adventures by watching my videos or reading my blogs!</p>
+      <h3><a href="http://kelco928.weebly.com/my-story.html" target="_blank">More About Me</a></h3>
+      <p>Let's go on an adventure!</p>
+      <a href="https://www.facebook.com/kelsey.fong.16" target="_blank"><img src="fb.png" height="20"></a>
+      <a href="https://www.instagram.com/kelco928/" target="_blank"><img src="ig.png" height="20"></a>
+      <a href="https://www.youtube.com/channel/UCjb4ZwNrTG44T4jTRh_bgxA?view_as=subscriber" target="_blank"><img src="yt.png" height="20"></a>
+      <a href="https://www.linkedin.com/in/kelsey-fong-186446155" target="_blank"><img src="li.png" height="20"></a>
     </div>
+    <br>
+    <div class="blog">
+      <h2>TRAVEL LOOKBOOK</h2>
+      <h5>Click on a photo to watch the vlog!</h5>
+      <div class="fakeimg">
+        <a href="https://www.youtube.com/watch?v=dy_nWOpGLSE" target="_blank"><img src="JapanGate.jpg" height="160"></a>
+        <a href="https://www.youtube.com/watch?v=U65h50Ut5i8" target="_blank"><img src="JapanPeople.jpg" height="160"></a>
+        <a href="https://www.youtube.com/watch?v=0_Oo3Elj0K0" target="_blank"><img src="ShanghaiDisney.jpg" height="184"></a>
+        <a href="https://www.youtube.com/watch?v=mpopcLLVKDM" target="_blank"><img src="SeoulStreet2.jpg" height="160"></a>
+        <a href="https://www.youtube.com/watch?v=ZABXCdWSlNI" target="_blank"><img src="SeoulStreet.jpg" height="160"></a>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="bloga">
+      <h2>THE VALUE OF THE VILLAGE</h2>
+      <h5>Blog, Nov 19, 2018</h5>
+      <div class="fakeimg" style="height:200px;"><center><img src="Gate.jpg" height="160"><img src="Grandaunt.jpg" height="160"><img src=""><img src="Stove.jpg" height="160"><img src="Fire.jpg" height="160"><img src="Outside.jpg" height="160"></center></div>
+      <center><p>If I could go back in time, I would tell my 10-year-old self to wake up and pay attention - someting special is right before you.</p>
+      <p>...<br>After getting lost for half an hour, the 13 of us pulled up to the village gates in a large van. We passed by broken down houses, overgrown fields, and old villagers hunched over staring at us through the windows.<br>I saw the look of my grandaunt's face, but I couldn't tell what she was thinking. Was she sad that she left? Or was she feeling the relief of leaving such an old place?​<br>The year was 2009 and my grandaunt, who was then just over 80, told my auntie that she wanted to travel back to Tai Shan and visit her old home before she couldn't anymore.<br>In 2010 I visited the Kwong Family Village for the first time - or China for that matter. "Ya, Ya, Ya!" "Nei Ho!" "Hoi loi mo geen ah!" That's all I could hear. 10-year-old me wasn't really sure what was going on. I knew how to speak some Chinese, but, then again, I was only in 4th grade, and the villagers were speaking a different dialect.<br>Pulling up to the house, you could tell that no one had lived there for years, decades even. We all filed out, taking in that this is where our family used to live - what remained of our family history.<br>There was a broken pump well in the corner and stairs that led up to the second floor. We were all curious to see what was up there, but were advised not to - it would've collapsed if any of us tried to go up. The other corner housed a dust and dirt covered stove with painted shelves holding small pots and pans. Looking at the conditions my family lived in, I was thankful to have running water, electricity, and a gas burning stove back home in the States; I don't think I could've survived living here.<br>​...</p><p>They say that you can't travel back in time and that you can never read someone's mind, but I wish I could. I wish I could travel back to the village in 2010 and I wish that I could read my grandaunt's mind. Because when I looked over at my grandaunt, and I don't think I had ever seen her so happy. It had probably been over 40 years since she last saw these people.<br>Memories of her childhood and the time she spent growing up here had probably come flooding in, especially when the old house came into view. She is more than 70 years older than me, but maybe if I had just thought about what the visit meant to her, I would have learned and appreciated it more.<br>Instead of being disgusted about being on an abandoned farm, I wish I had been more engaged. I remember that I just could not wait to get back on the bus and drive back to civilization. All I saw was an old building that no one lived in anymore - why couldn't I see that this building was my family history? I only saw what was offered on the surface, why couldn't I peel back the layers and see what all of this really meant to my family? Visiting an old family village isn't something that most people can say they've done, so why couldn't I just treasure it and not be disgusted with it?<br>Who knows if there will ever be another opportunity to see the village?</p></center>
+    </div>
+    <br>
+    <div class="blogb">
+      <h2>TUESDAY ADVENTURES WITH ALYSSA AND KELSEY</h2>
+      <h5>Weekly Adventures, Nov 27, 2018</h5>
+      <div class="fakeimg" style="height:200px;">
+        <a href="http://www.meimeiboston.com/" target="_blank"><img src="TA1.jpg" height="160"></a>
+        <a href="https://bonchon.com/korean-fried-chicken-allston-ma/" target="_blank"><img src="TA2.jpg" height="160"></a>
+        <a href="http://www.gongchausa.com/ma-allston/" target="_blank"><img src="TA3.jpg" height="160"></a>
+        <a href="http://tattebakery.com/locations/boston-fenway/" target="_blank"><img src="TA4.jpg" height="160"></a>
+        <a href="http://www.gourmetchinahouse.com/" target="_blank"><img src="TA5.jpg" height="160"></a>
+        <a href="http://boston.phocountrysidema.com/" target="_blank"><img src="TA6.jpg" height="160"></a>
+      </div>
+      <p><center>Meet my friend Alyssa. As two Californians determined to learn more about our home for the next four years, we decided to do something we like to call "Tuesday Adventures!" Every Tuesday, the two of us will find a resturant to try and give it a review. Not only is it a good chance to explore Boston, but it also gives us to opportunity to hang out and do what we love - eat!</center></p>
+      <p><center>Click on a photo to find out where we've already been!</center></p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <h2>Get connected with me!</h2>
+  <p>I'd love for you to get to know more about me and for me to know more about you!</p>
+  <a href="https://www.facebook.com/kelsey.fong.16" target="_blank"><img src="fb.png" height="20"></a>
+  <a href="https://www.instagram.com/kelco928/" target="_blank"><img src="ig.png" height="20"></a>
+  <a href="https://www.youtube.com/channel/UCjb4ZwNrTG44T4jTRh_bgxA?view_as=subscriber" target="_blank"><img src="yt.png" height="20"></a>
+  <a href="https://www.linkedin.com/in/kelsey-fong-186446155" target="_blank"><img src="li.png" height="20"></a>
+</div>
 
 </body>
-
 </html>
